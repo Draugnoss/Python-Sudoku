@@ -41,6 +41,7 @@ while 1:
                 pos = getGridPos(pos)
             except: 
                 "An error occured"
+                sys.exit()
 
 
 
