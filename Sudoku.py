@@ -37,8 +37,10 @@ while 1:
             sys.exit()
         elif event.type == pg.MOUSEBUTTONDOWN:
             pos = pg.mouse.get_pos()
-            pos = getGridPos(pos)
-            
+            try:
+                pos = getGridPos(pos)
+            except: 
+                "An error occured"
 
 
 
